@@ -1,0 +1,264 @@
+@media screen and (min-width: 800px) {
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    background-attachment: fixed;
+    background-size: auto 100vh;
+}
+
+  .spotify {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: #f5c555;
+  }
+  
+  .album_cover {
+    grid-area: 1 / 1 / 3 / 2;
+    z-index: 1;
+  }
+  
+  #image_base {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 35px;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  #cover2 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 60px;
+    z-index: 9;
+    opacity: 0.9;
+  }
+  
+  #cover3 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 85px;
+    z-index: 8;
+    opacity: 0.8;
+  }
+  
+  #cover4 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 110px;
+    z-index: 7;
+    opacity: 0.7;
+  }
+  
+  #cover5 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 135px;
+    z-index: 6;
+    opacity: 0.6;
+  }
+  
+  #cover6 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 160px;
+    z-index: 5;
+    opacity: 0.5;
+  }
+  
+  #cover7 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 185px;
+    z-index: 4;
+    opacity: 0.4;
+  }
+  
+  #cover8 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 210px;
+    z-index: 3;
+    opacity: 0.3;
+  }
+  
+  #cover9 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 235px;
+    z-index: 2;
+    opacity: 0.2;
+  }
+  
+  #cover10 {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 260px;
+    z-index: 1;
+    opacity: 0.1;
+  }
+  
+  .album_infos {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    margin-top: 10px;
+    margin-right: 60px;
+    z-index: 2;
+  }
+  
+  .album_name {
+    grid-area: 1 / 2 / 2 / 5;
+    margin-top: 15px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+  }
+  
+  .spotify_listen {
+    grid-area: 2 / 2 / 2 / 5;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  #dispo {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .spotify_listen p {
+    font-size: 0.75em;
+    margin-bottom: 0.75rem;
+    line-height: 90%;
+  }
+  
+  [id^="block"] i {
+    zoom: 180%
+  }
+
+  #block_3 a:link {
+    color: black;
+  }
+
+  #block_3 a:visited {
+    color: black;
+  }
+
+  #block_3 a:hover {
+  color: rgb(65, 209, 65);
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .spotify {
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: #f5c555;
+  }
+  
+  .album_cover {
+    z-index: 1;
+  }
+  
+  #image_base {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 35%;
+    opacity: 1;
+  }
+
+  [id^="cover"] {
+    display: none;
+  }
+
+  .album_infos {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    margin-top: 10px;
+    z-index: 2;
+  }
+  
+  .album_name {
+    margin-top: 15px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+  }
+  
+  .spotify_listen {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  #dispo {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .spotify_listen p {
+    font-size: 0.75em;
+    margin-bottom: 0.75rem;
+    line-height: 90%;
+  }
+  
+  [id^="block_"] i {
+    zoom: 180%
+  }
+
+  #block_3 a:link {
+    color: black;
+  }
+
+  #block_3 a:visited {
+    color: black;
+  }
+
+  #block_3 a:hover {
+  color: rgb(65, 209, 65);
+  }
+}
+
