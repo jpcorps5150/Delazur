@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Damion', serif;
+    font-size: 7rem;
+    font-weight: bold;
+    letter-spacing: 3rem;
+    text-align: center;
+    color: #d679a6;
+    margin: 100px 0 100px 0;
+}
+
+h2 {
+    margin: 20px 0 0 20px;
+}
+
+h3 {
+    margin: 0px 0 0 20px;
+}
+
+#quebec {
+    margin: 20px 0 0 20px;
+}
+
+#laboite {
+    margin: 10px 50px 10px 50px;
+    background-color: #493a1b;
+    border: 1px solid #d679a6;
+}
+
+#interboite {
+    background-color: #d679a6;
+    border: 1px solid #f5c555;
+    position: relative;
+    left: 350px;
+    bottom: 50px;
+    width: 150px;
+    height: 40px;
+}
+
+#texteinterboit {
+    color: black;
+    text-align: center;
+}
