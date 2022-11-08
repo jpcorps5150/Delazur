@@ -26,6 +26,7 @@ main {
     grid-column: 1 / 6;
 }
 
+
 @media screen and (min-width: 800px) {
     body {
         grid-template-columns: repeat(16, 1fr);
