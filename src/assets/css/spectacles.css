@@ -13,18 +13,30 @@ h2 {
 #listespectacles {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-items: center;
+}
+
+#flexdesktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 #laboite {
     align-self: center;
-    margin: 10px 0 10px 0;
+    width: 80%;
+    margin: 10px 10px 10px 10px;
     padding: 20px 0 20px 20px;
     background-color: #493a1b;
     border: 1px solid #d679a6;
-    width: 80%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
+}
+
+#doubleflex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #texteboite {
@@ -101,20 +113,27 @@ h4 {
     display: none;
     position: fixed;
     top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
     z-index: 1;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+    margin: none;
+    width: 100vw;
+    height: 200vw;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
 }
 
 .contenumodal {
     background-color: #f5c455;
-    margin: 65vw auto;
+    margin: auto;
+    position: relative;
+    top: 50vw;
+    bottom: 50vw;
+    margin: none;
     padding: 20px;
     border: 1px solid black;
-    width: 80%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,10 +207,11 @@ h6 {
     display: none;
     position: fixed;
     top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
     z-index: 1;
     margin: auto;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
@@ -208,3 +228,98 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        background-color: black;
+        width: 100vw;
+    }
+    
+    #listespectacles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #flexdesktop {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #listespectacles > :nth-child(2) {
+        align-self: flex-start;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(3) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(4) {
+        align-self: flex-start;
+    }
+
+    #listespectacles > :nth-child(5) {
+        align-self: flex-start;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(7) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(8) {
+        align-self: flex-start;
+    }
+
+    #listespectacles > :nth-child(8) > :first-child {
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(10) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+
+    #doubleflex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .modal {
+        top: 0vw;
+        bottom: 0vw;
+        left: 0vw;
+        right: 0vw;
+        z-index: 1;
+    }
+
+    .contenumodal {
+        top: 20vw;
+        bottom: 20vw;
+    }
+
+    .comfmodal {
+        top: 0vw;
+        bottom: 0vw;
+        left: 0vw;
+        right: 0vw;
+        z-index: 1;
+    }
+}
+
+
+
+
