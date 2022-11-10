@@ -16,14 +16,11 @@ body {
   margin: 0 -5px;
 }
 
-
-
 h2 {
   color: rgb(212, 132, 172);
   font-family: 'Damion', cursive;
   font-size: 35px;
 }
-
 
 .tannerdegosser {
   left: 60px;
@@ -54,7 +51,6 @@ h2 {
   opacity: 0.2;
 }
 
-
 .card:hover .tableun {
   opacity: 1;
 }
@@ -70,9 +66,6 @@ h2 {
 .card:hover .tablequatre {
   opacity: 1;
 }
-
-
-
 
 .alain {
   color: rgb(226, 193, 109);
@@ -143,7 +136,6 @@ h2 {
   font-size: 20px;
 }
 
-
 .tabletrois {
   border-collapse: collapse;
   bottom: 0;
@@ -160,7 +152,6 @@ h2 {
   width: 250px;
 }
 
-
 .docteur {
   color: rgb(226, 193, 109);
   opacity: 1;
@@ -172,7 +163,6 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
-
 
 .tablequatre {
   border-collapse: collapse;
@@ -191,7 +181,6 @@ h2 {
 }
 
 
-
 tr {
   border-bottom: 1px solid white;
   font-size: 14px;
@@ -204,14 +193,107 @@ td {
   text-align: left;
 }
 
-
-
 .image {
   opacity: 1;
   transition: .5s ease;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .spotify {
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: #f5c555;
+  }
+  
+  .album_cover {
+    z-index: 1;
+  }
+  
+  #image_base {
+    position: absolute;
+    width: 180px;
+    margin-top: 35px;
+    margin-left: 35%;
+    opacity: 1;
+  }
+
+  [id^="cover"] {
+    display: none;
+  }
+
+  .album_infos {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    margin-top: 10px;
+    z-index: 2;
+  }
+  
+  .album_name {
+    margin-top: 15px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+  }
+  
+  .spotify_listen {
+    padding: 1rem;
+    box-sizing: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  #dispo {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .spotify_listen p {
+    font-size: 0.75em;
+    margin-bottom: 0.75rem;
+    line-height: 90%;
+  }
+  
+  [id^="block_"] i {
+    zoom: 180%
+  }
+
+  #block_3 a:link {
+    color: black;
+  }
+
+  #block_3 a:visited {
+    color: black;
+  }
+
+  #block_3 a:hover {
+  color: rgb(65, 209, 65);
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 801px) {
 
   html {
     font-size: 62.5%;
@@ -348,6 +430,7 @@ td {
   .spotify_listen {
     grid-area: 2 / 2 / 2 / 5;
     padding: 1rem;
+    box-sizing: unset;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -385,128 +468,21 @@ td {
   #block_3 a:hover {
   color: rgb(65, 209, 65);
   }
-}
 
-@media screen and (max-width: 800px) {
-
-  html {
-    font-size: 62.5%;
-  }
-
-  .spotify {
-    display: grid;
-    justify-content: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100%;
-    height: 250px;
-    background-color: #f5c555;
-  }
-  
-  .album_cover {
-    z-index: 1;
-  }
-  
-  #image_base {
-    position: absolute;
-    width: 180px;
-    margin-top: 35px;
-    margin-left: 35%;
-    opacity: 1;
-  }
-
-  [id^="cover"] {
-    display: none;
-  }
-
-  .album_infos {
-    grid-column-start: 14;
-    grid-column-end: 15;
-    margin-top: 10px;
-    z-index: 2;
-  }
-  
-  .album_name {
-    margin-top: 15px;
-    font-size: 4rem;
-    font-weight: bold;
-    color: black;
-    width: 100%;
-  }
-  
-  .spotify_listen {
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    margin-top: -20px;
-    margin-left: -10px;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  #dispo {
-    font-size: 1em;
-    font-weight: bold;
-  }
-  
-  .spotify_listen p {
-    font-size: 0.75em;
-    margin-bottom: 0.75rem;
-    line-height: 90%;
-  }
-  
-  [id^="block_"] i {
-    zoom: 180%
-  }
-
-  #block_3 a:link {
-    color: black;
-  }
-
-  #block_3 a:visited {
-    color: black;
-  }
-
-  #block_3 a:hover {
-  color: rgb(65, 209, 65);
-  }
-}
-
-
-
-
-@media screen and (max-width: 801px) {
-  .column {
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-  }
-}
-
-
-@media screen and (min-width: 800px) {
   body {
-      background-color: black;
+    background-color: black;
   }
-  
-  
+
   .row {
-      display: flex;
-      flex-direction: baseline;
+    display: flex;
+    flex-direction: baseline;
   }
 
   .tableun, .tabledeux, .tabletrois, .tablequatre {
-      display: none;
+    display: none;
   }
 
-  
   .text {
-      font-size: 15px;
-      
+    font-size: 15px;
   }
 }
-
-
