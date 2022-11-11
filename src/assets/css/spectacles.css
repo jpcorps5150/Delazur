@@ -1,0 +1,325 @@
+h2 {
+    font-family: 'Damion', serif;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+    color: #d679a6;
+    background-color: black;
+    padding: 100px 0 70px 0;
+    margin: 0px;
+}
+
+#listespectacles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flexdesktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#laboite {
+    align-self: center;
+    width: 80%;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 0 20px 20px;
+    background-color: #493a1b;
+    border: 1px solid #d679a6;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#doubleflex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#texteboite {
+    margin: 0px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+#location {
+    font-size: 9px;
+}
+
+#interboite {
+    justify-self: center;
+    align-self: center;
+    padding: 5px 0 5px 0;
+    background-color: #d679a6;
+    border: 1px solid #f5c555;
+    width: 80%;
+    height: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interboite:hover {
+    background-color: white;
+}
+
+#texteinterboit {
+    color: black;
+    text-decoration: none;
+}
+
+#laboite:hover {
+    background-color: hsla(40, 46%, 20%, 0.5);
+}
+
+#boitenewsletter {
+    align-self: center;
+    margin: 10px 0 10px 0;
+    padding: 30px 10px 30px 10px;
+    background-color: #f5c455;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletterlink {
+    color: white;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 10px;
+    background: none;
+    border: none;
+}
+
+#newsletterlink:hover {
+    color: #493a1b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    z-index: 1;
+    margin: none;
+    width: 100vw;
+    height: 200vw;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.contenumodal {
+    background-color: #f5c455;
+    margin: auto;
+    position: relative;
+    top: 50vw;
+    bottom: 50vw;
+    margin: none;
+    padding: 20px;
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fermermodal {
+    width: 20px;
+    left: 50%;
+    color: black;
+    float: right;
+    font-size: 28px;
+    position: relative;
+}
+
+.fermermodal2 {
+    width: 20px;
+    left: 50%;
+    color: black;
+    float: right;
+    font-size: 28px;
+    position: relative;
+}
+
+.fermermodal:hover, .fermermodal:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal > div > p {
+    color: black;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+}
+
+h6 {
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+}
+
+#emailnews {
+    background-color: #f5c455;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+#emailnews:focus {
+    background-color: #d679a6;
+    color: white;
+    border: none;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.bouttonmodalsub {
+    border: none;
+    padding: 20px;
+}
+
+.comfmodal {
+    display: none;
+    position: fixed;
+    top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    z-index: 1;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+#bouttonmodalfermer {
+    border: none;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        background-color: black;
+        width: 100vw;
+    }
+    
+    #listespectacles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #flexdesktop {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #listespectacles > :nth-child(2) {
+        align-self: flex-start;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(3) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(4) {
+        align-self: flex-start;
+    }
+
+    #listespectacles > :nth-child(5) {
+        align-self: flex-start;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(7) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(8) {
+        align-self: flex-start;
+    }
+
+    #listespectacles > :nth-child(8) > :first-child {
+        justify-content: flex-end;
+    }
+
+    #listespectacles > :nth-child(10) {
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+
+    #doubleflex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .modal {
+        top: 0vw;
+        bottom: 0vw;
+        left: 0vw;
+        right: 0vw;
+        z-index: 1;
+    }
+
+    .contenumodal {
+        top: 20vw;
+        bottom: 20vw;
+    }
+
+    .comfmodal {
+        top: 0vw;
+        bottom: 0vw;
+        left: 0vw;
+        right: 0vw;
+        z-index: 1;
+    }
+}
+
+
+
+
