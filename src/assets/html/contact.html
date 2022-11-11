@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Delazur/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/Delazur/src/assets/img/delazur_logo.png" alt="Logo de Delazur">
+            <h1 class="visuallyhidden">Delazur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="serif" href="/src/index.html">Accueil</a></li>
+                <li><a class="serif" href="/src/spectacles.html">Spectacles</a></li>
+                <li><a class="serif" href="/src/boutique.html">Boutique</a></li>
+                <li><a class="serif" href="/src/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    <form action="#" id="formulaire" method="GET" target="_blank">
+<!-- INFORMATIONS GENERALES -->
+
+   
+    <fieldset>
+        <legend>Informations générales</legend>
+    <div id="general">
+        <div>
+            <label for="first-name">Prénom</label>
+            <input type="text" id="first-name" name="first-name" minlength="2" maxlength="20" size="10">
+        </div>    
+        <div>
+            <label for="last-name">Nom de famille</label> 
+            <input type="text" id="last-name" name="last-name" minlength="2" maxlength="25">
+        </div>    
+        <div>
+            <label for="email">Adresse courriel</label>
+            <input type="email" id="email" name="email">
+        </div>  
+        <div>
+            <label for="birth-date">Date de naissance</label>
+            <input type="date" id="birth-date" name="bith-date" value="YYYY-MM-JJ" min="1920-01-01" max="2022-12-31">
+        </div>
+        <div>
+            <label for="age">Et ton âge?</label>
+            <input type="number" id="age" name="age" min="0" max="99">
+        </div>
+        <div>
+            <label for="number">Numéro de téléphone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+    </div>    
+        
+    </fieldset>
+
+   
+<!-- ADRESSE  -->
+
+    <fieldset id="adresse"> 
+        <legend>Adresse</legend>   
+    <div id="adress">
+        <div>
+            <label for="numero">Numéro civique</label>
+            <input type="text" id="adress-number" name="numeo" pattern="[0-9]">
+        </div>
+        <div>
+            <label for="street">Rue</label>
+            <input type="text" id="street" name="street">
+        </div>
+        <div>
+            <label for="province" id="province">Province</label>
+            <select>
+                <option>Alberta</option>
+                <option>Île-du Prince-Édouard</option>
+                <option>Manitoba</option>
+                <option>Nouveau-Brunswick</option>
+                <option>Nouvelle-Écosse</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Québec</option>
+                <option>Saskatchewan</option>
+                <option>Terre-Neuve-et-Labrador</option>
+                <option>Territoires du Nord-Ouest</option>
+                <option>Yukon</option>
+            </select>
+        </div>
+        <div>
+            <label for="country">Pays</label>
+            <input type="text" id="country" name="country" placeholder="Canada" readonly>
+        </div>
+        <div>
+            <label for="postal-code">Code Postal</label>
+            <input type="text" id="postal-code" name="postal-code" pattern="[A-Z|a-z]{1}[0-9]{1}[A-Z|a-z]{1} [0-9]{1}[A-Z|a-z]{1}[0-9]{1}">
+        </div>
+    </div>
+    </fieldset>
+    <div id="last-section">
+        <div>
+            <label for="color" id="color">Votre couleur préférée?</label>
+            <input type="color" id="favorite-color" value="#000000">
+        </div>   
+        <div>
+            <label for="pictures">Vos images préférées?</label>
+            <input type="file" id="favorite-pic" name="favorite-pic" accept=".png, .jpeg, .jpg" multiple>
+        </div>
+        <div>
+            <label for="month">Votre mois préféré? De quelle année?</label>
+            <input type="month" id="month" name="month">
+        </div>
+        <div>
+            <label for="week">Votre semaine préférée de tous les temps?</label>
+            <input type="week" id="week" name="week" min="1920-W01" max="2022-W52" required>
+        </div>
+        <div>
+            <label for="site">Un site que nous devons découvrir</label>
+            <input type="url" id="website" name="website">
+        </div>
+        <div>
+            <label for="note">Qu'elle note lui donnez vous?</label>
+            <input type="range" id="note" name="note" min="0" max="100" step="10">
+        </div>
+        <div>
+            <label for="date-time">La date et l'heure du show que tu veux venir voir?</label>
+            <input type="datetime-local" id="datetime-show" name="datetime-show" value="yyyy-mm-ddT00:00">
+        </div>    
+    </div> 
+    
+    <div class="checkbox">
+    <p>Durant ce show tu veux ...</p>
+        <div class="action">
+            <label for="danser">Danser</label>                
+            <input type="checkbox" id="danser" name="danser">
+        </div>   
+        <div class="action">
+            <label for="groover">Groover</label>
+            <input type="checkbox" id="groover" name="groover">           
+        </div>
+        <div class="action">
+            <label for="coucher-tard">Me coucher tard</label>
+             <input type="checkbox" id="coucher-tard" name="coucher-tard">
+        </div>
+     </div>
+    <fieldset id="membre">
+        <legend>Votre membre du groupe préféré?</legend>
+    <div id="member">
+        <input type="radio" id="alain" name="alain">
+        <label for="alain">Alain Jasmine</label>
+
+        <input type="radio" id="jacques" name="jacques">
+        <label for="jacques">Jacques</label>
+
+        <input type="radio" id="dove" name="dove">
+        <label for="dove">Dove</label>
+
+        <input type="radio" id="homme" name="homme">
+        <label for="homme">Dr Homme</label>
+    </div>
+    </fieldset>
+    <div>
+        <label for="password">Mot de paaaaaaaaaasse?</label>
+        <input type="password" id="password" name="password" pattern="Kaput Draconis">
+    </div>
+    
+    <div id="button">
+        <button type="reset" id="reset">Réinitialiser</button>
+        <button type="submit" id="submit">Soumette</button>
+    </div>
+ 
+</form>
+</main>
+    <script>
+        let form = document.querySelector('form');
+        let emailInput = document.querySelector('input[type=email]');
+
+        form.addEventListener('submit', validateForm);
+
+        function validateForm() {
+            event.preventDefault();
+            let emailValue = emailInput.value;
+            letindexArobas = emailValue.indexOf('@');
+            let inedexDot = emailValue.indexOf('.');
+
+            if (indexArobas !== -1 && indexDot !== -1) {
+                form.submit();
+            }
+        }
+    </script>
+    <footer>
+        <div>
+            <img src="/Delazur/src/assets/img/delazur_logo.png" alt="Logo Delazur">
+        </div>
+        <div>
+            <ul>
+                <li><a href="/src/index.html">Accueil</a></li>
+                <li><a href="/src/spectacles.html">Spectacles</a></li>
+                <li><a href="/src/boutique.html">Boutique</a></li>
+                <li><a href="/src/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/bandcamp?style=brands" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Production en médias interactifs</p>
+            <p>GR.06 - Novembre 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
